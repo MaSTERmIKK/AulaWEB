@@ -1,0 +1,2 @@
+Qui troverai una serie di esercizi un pò più avanzati e/o su elementi più complessi o che spigheremo più avanti rispetto al programma andando cosi ad aumentare il baglio tecnico.
+Consiglio comunque la presenza in aula e il ripasso di alcune basi teoriche JS.
