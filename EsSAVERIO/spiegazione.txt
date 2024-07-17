@@ -1,2 +1,5 @@
 Qui troverai una serie di esercizi un pò più avanzati e/o su elementi più complessi o che spigheremo più avanti rispetto al programma andando cosi ad aumentare il baglio tecnico.
 Consiglio comunque la presenza in aula e il ripasso di alcune basi teoriche JS.
+
+
+Esegui l'es 1 e 2 poi passa a quelli sulle regole fondamentali e solo alla fine fai ADVA e l'astrazione ;) 
