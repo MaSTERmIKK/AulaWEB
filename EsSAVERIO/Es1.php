@@ -1,4 +1,4 @@
-Esercizio
+
 Obiettivo: Creare una funzione in PHP chiamata calcolaAreaTriangolo che calcoli l'area di un triangolo dato base e altezza.
 
 Requisiti:
