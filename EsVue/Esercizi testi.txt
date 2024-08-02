@@ -1,0 +1,44 @@
+1:  In questo esercizio andrete a creare una semplice applicazione To-Do List utilizzando Vue.js. 
+Seguite questi passaggi per completare l'attività.
+
+
+Creare un nuovo file HTML chiamato index.html.
+Includere il CDN di Vue.js nel file HTML.
+Struttura dell'HTML
+
+Aggiungere un div con l'id app che sarà il contenitore dell'app Vue.js.
+All'interno del div, creare una struttura base per la To-Do List che includa:
+Un input text per aggiungere nuove attività.
+Un pulsante per aggiungere l'attività.
+Un elenco (ul) per visualizzare le attività.
+Script Vue.js
+
+Creare un'istanza Vue nel file HTML.
+Definire lo stato dell'applicazione con una lista di attività vuota.
+Implementare metodi per aggiungere una nuova attività e rimuovere le attività completate.
+
+
+
+
+
+
+2:  In questo esercizio, creerete una semplice applicazione di contatore utilizzando Vue.js.
+Seguite questi passaggi per completare l'attività.
+
+
+
+Creare un nuovo file HTML chiamato counter.html.
+Includere il CDN di Vue.js nel file HTML.
+Struttura dell'HTML
+
+Aggiungere un div con l'id app che sarà il contenitore dell'app Vue.js.
+All'interno del div, creare una struttura base per il contatore che includa:
+Un pulsante per incrementare il contatore.
+Un pulsante per decrementare il contatore.
+Un elemento per visualizzare il valore attuale del contatore.
+Script Vue.js
+
+Creare un'istanza Vue nel file HTML.
+Definire lo stato dell'applicazione con una variabile count inizializzata a 0.
+Implementare metodi per incrementare e decrementare il contatore.
+
