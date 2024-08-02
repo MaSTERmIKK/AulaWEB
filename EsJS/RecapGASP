@@ -1,0 +1,71 @@
+
+GASP (GreenSock Animation Platform): Recap e Tre Caratteristiche Principali
+GASP (GreenSock Animation Platform) è una potente libreria di animazione JavaScript utilizzata per creare animazioni web ad alte prestazioni. È ampiamente utilizzata per animazioni complesse e interattive su siti web e applicazioni.
+
+Tre Caratteristiche Principali
+Facilità d'Uso
+
+GASP fornisce una sintassi semplice e intuitiva per creare animazioni. Anche animazioni complesse possono essere implementate con poche righe di codice.
+Alta Performance
+
+GASP è ottimizzato per prestazioni elevate, garantendo animazioni fluide e senza scatti su tutti i dispositivi e browser moderni.
+Timeline e Controllo
+
+GASP offre potenti strumenti per il controllo delle animazioni, come le timeline, che permettono di sincronizzare e coordinare sequenze di animazioni complesse con precisione.
+Esempio di Codice
+Esercizio: Creare una Semplice Animazione
+
+Impostazione del Progetto
+
+Creare un nuovo file HTML chiamato animation.html.
+Includere il CDN di GASP nel file HTML.
+Struttura dell'HTML
+
+Aggiungere un div con l'id box che sarà l'elemento da animare.
+Script GASP
+
+Creare una semplice animazione che muove il div da sinistra a destra.
+Esempio di Codice:
+
+Step 1: Creare il file animation.html
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animazione con GASP</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <div id="box"></div>
+
+    <script>
+        // Animazione che muove il div da sinistra a destra
+        gsap.to("#box", {duration: 2, x: 300});
+    </script>
+</body>
+</html>
+
+
+Spiegazione del Codice
+Includere GASP:
+
+Abbiamo incluso GASP utilizzando un CDN nel tag <head> del nostro file HTML.
+Struttura HTML:
+
+Il contenitore principale dell'animazione è un div con l'id box.
+Il CSS definisce lo stile del div, impostando larghezza, altezza, colore di sfondo, e posizione iniziale.
+Script GASP:
+
+Abbiamo creato una semplice animazione utilizzando gsap.to che muove il div con id box lungo l'asse x di 300 pixel in 2 secondi.
