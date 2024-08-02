@@ -1,0 +1,12 @@
+Esercizio 1: Somma di Numeri Pari
+Istruzioni: Scrivi una funzione in JavaScript che accetti un array di numeri e ritorni la somma di tutti i numeri pari presenti nell'array.
+
+
+Esercizio 2: Conta le Parole
+Istruzioni: Scrivi una funzione in JavaScript che accetti una stringa e ritorni il numero di parole presenti nella stringa. Considera che le parole sono separate da spazi.
+
+Esercizio 3: Trova il Numero più Grande
+Istruzioni: Scrivi una funzione in JavaScript che accetti un array di numeri e ritorni il numero più grande presente nell'array
+
+Esercizio 4: Filtro degli Oggetti
+Istruzioni: Scrivi una funzione in JavaScript che accetti un array di oggetti e un valore di soglia. La funzione dovrebbe ritornare un nuovo array contenente solo gli oggetti in cui il valore della proprietà "età" è maggiore della soglia.
