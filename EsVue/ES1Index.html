@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List con Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>To-Do List</h1>
+        <input v-model="newTask" placeholder="Aggiungi una nuova attività">
+        <button @click="addTask">Aggiungi</button>
+        <ul>
+            <li v-for="(task, index) in tasks" :key="index">
+                {{ task }}
+                <button @click="removeTask(index)">Rimuovi</button>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                newTask: '',
+                tasks: []
+            },
+            methods: {
+                addTask: function() {
+                    if (this.newTask !== '') {
+                        this.tasks.push(this.newTask);
+                        this.newTask = '';
+                    }
+                },
+                removeTask: function(index) {
+                    this.tasks.splice(index, 1);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
