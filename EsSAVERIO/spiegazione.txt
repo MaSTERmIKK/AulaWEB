@@ -1,6 +1,0 @@
-Qui troverai una serie di esercizi un pò più avanzati e/o su elementi più complessi o che spigheremo più avanti rispetto al programma andando cosi ad aumentare il baglio tecnico.
-Consiglio comunque la presenza in aula e il ripasso di alcune basi teoriche JS.
-
-PHP E OOp sono tutte le slide di teorica ma o sparso qualche spiegazione anche fra i commenti ai codici e negli esercizi 
-
-Esegui l'es 1 e 2 poi passa a quelli sulle regole fondamentali e solo alla fine fai ADVA e l'astrazione ;) 
