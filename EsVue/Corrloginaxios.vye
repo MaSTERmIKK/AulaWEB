@@ -1,0 +1,74 @@
+<script>
+import axios from 'axios';
+
+export default {
+  name: 'Login',
+  data() {
+    return {
+      email: '',
+      password: '',
+      emailError: '',
+      passwordError: '',
+      loginError: '',
+      loginSuccess: false,
+      isLoading: false,
+    };
+  },
+  methods: {
+    validateEmail() {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!this.email) {
+        this.emailError = 'L\'email è richiesta.';
+      } else if (!emailPattern.test(this.email)) {
+        this.emailError = 'Inserisci un\'email valida.';
+      } else {
+        this.emailError = '';
+      }
+    },
+    validatePassword() {
+      if (!this.password) {
+        this.passwordError = 'La password è richiesta.';
+      } else if (this.password.length < 6) {
+        this.passwordError = 'La password deve avere almeno 6 caratteri.';
+      } else {
+        this.passwordError = '';
+      }
+    },
+    async handleLogin() {
+      // Reset dei messaggi di errore
+      this.loginError = '';
+      this.loginSuccess = false;
+
+      // Validazione dei campi
+      this.validateEmail();
+      this.validatePassword();
+
+      if (this.emailError || this.passwordError) {
+        return;
+      }
+
+      this.isLoading = true;
+
+      try {
+        // Effettua la chiamata API
+        const response = await axios.post('https://tuo-backend.com/api/login', {
+          email: this.email,
+          password: this.password,
+        });
+
+        if (response.data.success) {
+          this.loginSuccess = true;
+          // Salva il token o altre informazioni necessarie
+          // Ad esempio: localStorage.setItem('token', response.data.token);
+        } else {
+          this.loginError = response.data.message || 'Credenziali non valide.';
+        }
+      } catch (error) {
+        this.loginError = 'Errore di rete. Riprova più tardi.';
+      } finally {
+        this.isLoading = false;
+      }
+    },
+  },
+};
+</script>
